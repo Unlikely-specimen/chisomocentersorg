@@ -1,0 +1,1548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chisomo Centers - A Safe Haven for Children living on the streets of lusaka, zambia </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo-container" id="logoContainer" role="button" tabindex="0" aria-label="Go to home page">
+                <img src="images/logo.jpg" alt="Chisomo Logo" class="logo-img">
+                
+                <div class="logo"></div>
+            </div>
+            <div class="menu-items" id="menuItems">
+                <a href="#" onclick="showPage('home'); return false;">Home</a>
+                <a href="#about" onclick="scrollToSection('about'); return false;">About Us</a>
+                <a href="#programs" onclick="scrollToSection('programs'); return false;">Programs</a>
+                <a href="#values" onclick="scrollToSection('values'); return false;">Our Values</a>
+                <a href="#contact" onclick="scrollToSection('contact'); return false;">Contact</a>
+                <a href="#" onclick="scrollToSection('donate'); return false;" class="btn">Donate Now</a>
+            </div>
+            <!-- Hamburger Menu for Mobile -->
+            <div class="hamburger" id="hamburger" role="button" tabindex="0" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="menuItems">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HOME PAGE -->
+    <div id="home" class="page active">
+        <!-- Hero Section -->
+        <section class="hero">
+            <video autoplay muted loop playsinline class="hero-video-background">
+                <source src="images/hero-video.webm" type="video/webm">
+                <source src="hero-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <h1>A <span class="hero-highlight">Safe Haven</span><br>for Children</h1>
+                <p>Since 1992, Chisomo has been transforming lives by rescuing children from the streets and providing them with shelter, education, and a pathway to a brighter future.</p>
+                
+                <div class="hero-buttons">
+                    <a href="#" onclick="scrollToSection('programs'); return false;" class="btn">Learn More</a>
+                    <a href="#" onclick="showPage('getInvolved'); return false;" class="btn btn-outline">Get Involved</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partners Section -->
+        <section class="partners">
+            <div class="container">
+                <div class="partners-box">
+                    <h2>Our Partners</h2>
+                    <div class="logos">
+                        <img src="https://www.mcdss.gov.zm/wp-content/uploads/2021/12/Mcdsslogo.EDITED-1.png" alt="MCDSS">
+                        <img src="images/Cred-logo.png" alt="CRED">
+                        <img src="images/TP-logo.jpg" alt="Town practice logo">
+                    </div>
+                </div>
+            </div>
+        </section>
+  <!-- About Section -->
+        <section class="about" id="about">
+            <div class="container">
+                <!-- Row 1: About Text and Campaign Carousel -->
+                <div class="about-content">
+                    <div>
+                        <h2>Saving Children from the Streets Since 1992</h2>
+                        <p>Originally named Full Proof Mission, Chisomo was founded by Aaron Chilunjika after witnessing children being exploited on the streets. What began as classes under a tree has grown into a comprehensive program serving vulnerable children across Zambia.</p>
+                        <p>Registered with the Zambian government in 1994, we operate as an interdenominational para-church organization, providing both intervention and prevention services to break the cycle of street life.</p>
+                    </div>
+
+                    <!-- Campaign Posters Carousel -->
+                    <div class="campaign-carousel">
+                        <div class="carousel-container">
+
+                            <div class="slider">
+                                <div id="slide-1" class="slide">
+                                    <img src="images/slide-1.jpg" alt="Campaign slide 1">
+                                    <div class="slide-description">
+                                        <h3>Making a Difference</h3>
+                                        <p>Join us in transforming the lives of street children through compassionate care and education</p>
+                                    </div>
+                                </div>
+                                <div id="slide-2" class="slide">
+                                    <img src="images/Holistic-mom and Baby.JPG" alt="Holistic mom and baby care">
+                                    <div class="slide-description">
+                                        <h3>Holistic Care for Families</h3>
+                                        <p>Supporting mothers and children with comprehensive health and wellness programs</p>
+                                    </div>
+                                </div>
+                                <div id="slide-3" class="slide">
+                                    <img src="images/education-alumni.JPG" alt="Education and alumni success">
+                                    <div class="slide-description">
+                                        <h3>Education & Success Stories</h3>
+                                        <p>Empowering children through quality education and building pathways to brighter futures</p>
+                                    </div>
+                                </div>
+                                <div id="slide-4" class="slide">
+                                    <img src="images/chisomo8.JPG" alt="Chisomo center activities">
+                                    <div class="slide-description">
+                                        <h3>Community Programs & Support</h3>
+                                        <p>Creating safe spaces and fostering community engagement through our dedicated programs</p>
+                                    </div>
+                                </div>
+                                <div id="slide-5" class="slide">
+                                    <img src="images/morning street outreach in Lusaka Zambia.jpg" alt="Street outreach program">
+                                    <div class="slide-description">
+                                        <h3>Morning Street Outreach</h3>
+                                        <p>Reaching out to children on the streets of Lusaka, offering support and pathways to safety</p>
+                                    </div>
+                                </div>
+                                <div id="slide-6" class="slide">
+                                    <img src="images/Outreach Programs- former street child speak to children living on the street of Lusaka zambia.JPG" alt="Former street child mentoring">
+                                    <div class="slide-description">
+                                        <h3>Peer Mentoring & Outreach</h3>
+                                        <p>Former street children sharing their success stories and hope with current vulnerable youth</p>
+                                    </div>
+                                </div>
+                                <div id="slide-7" class="slide">
+                                    <img src="images/12 step litercy free drug-therapy..jpg" alt="12 step literacy therapy program">
+                                    <div class="slide-description">
+                                        <h3>12-Step Literacy & Therapy Program</h3>
+                                        <p>Comprehensive recovery and rehabilitation programs promoting self-reliance and personal growth</p>
+                                    </div>
+                                </div>
+                                <div id="slide-8" class="slide">
+                                    <img src="images/a volunteer Jane teaching children litracy through farm and games.JPG" alt="Volunteer teaching literacy through farming">
+                                    <div class="slide-description">
+                                        <h3>Literacy Through Experiential Learning</h3>
+                                        <p>Innovative teaching methods combining farming and games to develop critical life skills</p>
+                                    </div>
+                                </div>
+                                <div id="slide-9" class="slide">
+                                    <img src="images/Basic medical screening during health day.JPG" alt="Medical screening and health services">
+                                    <div class="slide-description">
+                                        <h3>Health & Wellness Services</h3>
+                                        <p>Providing essential medical screenings and healthcare to ensure children's wellbeing</p>
+                                    </div>
+                                </div>
+                                <div id="slide-10" class="slide">
+                                    <img src="images/Lunch with nshima and chicken..jpg" alt="Children being served nutritious meals">
+                                    <div class="slide-description">
+                                        <h3>Nutrition & Daily Meals</h3>
+                                        <p>Ensuring every child receives nutritious meals as part of our comprehensive care program</p>
+                                    </div>
+                                </div>
+                                <div id="slide-11" class="slide">
+                                    <img src="images/Internship Programs.jpg" alt="Youth internship and skills training">
+                                    <div class="slide-description">
+                                        <h3>Internship & Skills Development</h3>
+                                        <p>Preparing youth for employment through practical internship programs and vocational training</p>
+                                    </div>
+                                </div>
+                                <div id="slide-12" class="slide">
+                                    <img src="images/Samaritan's  Purse.JPG" alt="Samaritan's Purse partnership and gift giving">
+                                    <div class="slide-description">
+                                        <h3>Partnership & Community Support</h3>
+                                        <p>Working with generous partners to bring joy, hope, and vital resources to the children we serve</p>
+                                    </div>
+                                </div>
+                                <div id="slide-13" class="slide">
+                                    <img src="images/completed group therapy sessions a new begining of self reliance..jpg" alt="Group therapy and self reliance programs">
+                                    <div class="slide-description">
+                                        <h3>Group Therapy & Self-Reliance</h3>
+                                        <p>Empowering children through therapeutic interventions and building pathways to independence</p>
+                                    </div>
+                                </div>
+                                <div id="slide-14" class="slide">
+                                    <img src="images/Hero-boy.jpeg" alt="Inspiring hero story of transformation">
+                                    <div class="slide-description">
+                                        <h3>Stories of Transformation</h3>
+                                        <p>Real lives changed through our comprehensive care and support programs</p>
+                                    </div>
+                                </div>
+                                <div id="slide-15" class="slide">
+                                    <img src="images/hero-chunga.jpg" alt="Hero story of hope and recovery">
+                                    <div class="slide-description">
+                                        <h3>From Streets to Hope</h3>
+                                        <p>Witnessing the remarkable resilience and recovery of children in our care</p>
+                                    </div>
+                                </div>
+                                <div id="slide-16" class="slide">
+                                    <img src="images/Internship program- interns administering the 12 step therapy.jpg" alt="Youth internship and therapy administration">
+                                    <div class="slide-description">
+                                        <h3>Internship & Professional Development</h3>
+                                        <p>Training youth as peer counselors and therapy facilitators to serve their communities</p>
+                                    </div>
+                                </div>
+                                <div id="slide-17" class="slide">
+                                    <img src="images/outreach.jpg" alt="Community outreach and street work">
+                                    <div class="slide-description">
+                                        <h3>Community Outreach Initiatives</h3>
+                                        <p>Actively engaging with communities to identify and support vulnerable children</p>
+                                    </div>
+                                </div>
+                                <div id="slide-18" class="slide">
+                                    <img src="images/Pastor Kayombo and the co-founder of chisomo Josephine chilunjika addressing the children during a samaritans purse gift unboxing..jpg" alt="Leadership and community gathering">
+                                    <div class="slide-description">
+                                        <h3>Leadership & Community Engagement</h3>
+                                        <p>Bringing together leadership and community to celebrate and support our mission</p>
+                                    </div>
+                                </div>
+                                <div id="slide-19" class="slide">
+                                    <img src="images/Preparing for the 12 step ;Literacy Free therapy.jpg" alt="Preparing children for therapy and literacy programs">
+                                    <div class="slide-description">
+                                        <h3>Preparing for Recovery & Growth</h3>
+                                        <p>Getting children ready for transformative therapy and literacy programs</p>
+                                    </div>
+                                </div>
+                                <div id="slide-20" class="slide">
+                                    <img src="images/Resting after an early morning of street outreach on the streets of Lusaka.jpg" alt="Rest and recovery during outreach">
+                                    <div class="slide-description">
+                                        <h3>Rest & Recovery Support</h3>
+                                        <p>Providing comfort and rest to children encountered during street outreach activities</p>
+                                    </div>
+                                </div>
+                                <div id="slide-21" class="slide">
+                                    <img src="images/Vanessa -in house cousellor during group counselling session..jpg" alt="Professional counseling and support services">
+                                    <div class="slide-description">
+                                        <h3>Professional Counseling Services</h3>
+                                        <p>Qualified counselors providing compassionate guidance and emotional support to children</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-nav">
+                                <a href="#slide-1" class="slider-dot"></a>
+                                <a href="#slide-2" class="slider-dot"></a>
+                                <a href="#slide-3" class="slider-dot"></a>
+                                <a href="#slide-4" class="slider-dot"></a>
+                                <a href="#slide-5" class="slider-dot"></a>
+                                <a href="#slide-6" class="slider-dot"></a>
+                                <a href="#slide-7" class="slider-dot"></a>
+                                <a href="#slide-8" class="slider-dot"></a>
+                                <a href="#slide-9" class="slider-dot"></a>
+                                <a href="#slide-10" class="slider-dot"></a>
+                                <a href="#slide-11" class="slider-dot"></a>
+                                <a href="#slide-12" class="slider-dot"></a>
+                                <a href="#slide-13" class="slider-dot"></a>
+                                <a href="#slide-14" class="slider-dot"></a>
+                                <a href="#slide-15" class="slider-dot"></a>
+                                <a href="#slide-16" class="slider-dot"></a>
+                                <a href="#slide-17" class="slider-dot"></a>
+                                <a href="#slide-18" class="slider-dot"></a>
+                                <a href="#slide-19" class="slider-dot"></a>
+                                <a href="#slide-20" class="slider-dot"></a>
+                                <a href="#slide-21" class="slider-dot"></a>
+
+                            </div> 
+                        </div>
+   
+                       
+                    </div>
+                </div>
+
+                <!-- Row 2: Current Campaigns -->
+                <div class="campaigns-section" style="grid-column: span 2;">
+                    <h3><i class="fas fa-bullhorn"></i> Current Campaigns</h3>
+                    
+                    <div class="campaign-cards-container">
+                        <div class="campaign-card">
+                            <span class="campaign-badge">ACTIVE</span>
+                            <h4><i class="fas fa-graduation-cap"></i> Back to School 2025</h4>
+                            <p>Help us provide school uniforms, shoes, and supplies for 50 children returning to school this January.</p>
+                            <div class="campaign-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 68%"></div>
+                                </div>
+                                <div class="campaign-stats">
+                                    <span><strong>K34,000</strong> raised</span>
+                                    <span>Goal: <strong>K50,000</strong></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="campaign-card">
+                            <span class="campaign-badge">URGENT</span>
+                            <h4><i class="fas fa-home"></i> Shelter Renovation Fund</h4>
+                            <p>Urgent repairs needed for our shelter roof and plumbing to ensure children have a safe, comfortable home.</p>
+                            <div class="campaign-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 45%"></div>
+                                </div>
+                                <div class="campaign-stats">
+                                    <span><strong>K22,500</strong> raised</span>
+                                    <span>Goal: <strong>K50,000</strong></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="campaign-card">
+                            <span class="campaign-badge">ONGOING</span>
+                            <h4><i class="fas fa-utensils"></i> Daily Meals Program</h4>
+                            <p>Support our Drop-in Center feeding program that serves 50+ street children every single day.</p>
+                            <div class="campaign-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 82%"></div>
+                                </div>
+                                <div class="campaign-stats">
+                                    <span><strong>K24,600</strong> raised</span>
+                                    <span>Monthly Goal: <strong>K30,000</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#" class="btn" style="margin-top: 24px; display: block; text-align: center;">
+                        <i class="fas fa-heart"></i> Support a Campaign
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Values Section -->
+        <section class="values" id="values">
+            <div class="container">
+                <h2>Our Core Values</h2>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-icon"><i class="fas fa-child"></i></div>
+                        <h3>Child-Centric Approach</h3>
+                        <p>We prioritize the best interests of each child, focusing on family reintegration and placement in loving homes.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon"><i class="fas fa-comments"></i></div>
+                        <h3>Child Participation</h3>
+                        <p>Children are actively involved in decisions about their future, ensuring their voices are heard and respected.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon"><i class="fas fa-hands-helping"></i></div>
+                        <h3>Non-Discrimination</h3>
+                        <p>We provide care without regard to religious beliefs, tribe, race, or any other factors.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon"><i class="fas fa-chart-line"></i></div>
+                        <h3>Accountability</h3>
+                        <p>We demonstrate transparency to children, government, partners, and the community through regular reporting.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon"><i class="fas fa-network-wired"></i></div>
+                        <h3>Partnerships</h3>
+                        <p>We collaborate with organizations and communities to maximize our impact and share best practices.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Programs Section -->
+        <section class="programs" id="programs">
+            <div class="container">
+                <h2>Our Programs</h2>
+                <p class="subtitle">Comprehensive services addressing the complex needs of street children</p>
+                <div class="programs-grid">
+                    <div class="program-card" onclick="showPage('dropin')">
+                        <div class="program-image"><i class="fas fa-door-open"></i></div>
+                        <div class="program-content">
+                            <h3>Drop-in Center</h3>
+                            <p>A safe space where street children can access food, basic medical care, and counseling services throughout the day.</p>
+                        </div>
+                    </div>
+                    <div class="program-card" onclick="showPage('shelter')">
+                        <div class="program-image"><i class="fas fa-home"></i></div>
+                        <div class="program-content">
+                            <h3>Shelter & Home</h3>
+                            <p>Providing safe accommodation, nutritious meals, and a nurturing environment for children rescued from the streets.</p>
+                        </div>
+                    </div>
+                    <div class="program-card" onclick="showPage('education')">
+                        <div class="program-image"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="program-content">
+                            <h3>Education & Skills Training</h3>
+                            <p>Offering formal education and vocational skills training to empower children with tools for a better future.</p>
+                        </div>
+                    </div>
+                    <div class="program-card" onclick="showPage('reintegration')">
+                        <div class="program-image"><i class="fas fa-users"></i></div>
+                        <div class="program-content">
+                            <h3>Family Reintegration</h3>
+                            <p>Working to reunite children with their families or place them in loving foster or extended family homes.</p>
+                        </div>
+                    </div>
+                    <div class="program-card" onclick="showPage('prevention')">
+                        <div class="program-image"><i class="fas fa-shield-alt"></i></div>
+                        <div class="program-content">
+                            <h3>Women's Prevention Program</h3>
+                            <p>Supporting at-risk families through income-generating activities to prevent children from joining the streets.</p>
+                        </div>
+                    </div>
+                    <div class="program-card" onclick="showPage('holistic')">
+                        <div class="program-image"><i class="fas fa-heart"></i></div>
+                        <div class="program-content">
+                            <h3>Holistic Care</h3>
+                            <p>Providing medical care, emotional support, and spiritual guidance rooted in Christian values.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta">
+            <div class="container">
+                <h2>Help Us Transform Lives</h2>
+                <p>Every child deserves a chance at a better life. Your support can make the difference between a child on the streets and a child with hope for the future.</p>
+                <div class="hero-buttons">
+                    <a href="#" onclick="scrollToSection('donate'); return false;" class="btn">Donate Today</a>
+                    <a href="#" onclick="scrollToSection('contact'); return false;" class="btn btn-outline">Get Involved</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Donation System Section -->
+        <section class="donate-section" id="donate">
+            <div class="container">
+                <h2>Support Our Mission</h2>
+                <p class="subtitle">Your donation directly helps rescue and rehabilitate street children in Zambia</p>
+                
+                <div class="donation-container">
+                    <div class="donation-form">
+                        <h3>Make a Donation</h3>
+                        <form id="donationForm" onsubmit="processDonation(event)">
+                            <div class="form-group">
+                                <label for="donorName">Full Name *</label>
+                                <input type="text" id="donorName" name="donorName" required aria-label="Your full name" placeholder="John Doe">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="donorEmail">Email Address *</label>
+                                <input type="email" id="donorEmail" name="donorEmail" required aria-label="Your email address" placeholder="john@example.com">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="donationAmount">Donation Amount (K) *</label>
+                                <input type="number" id="donationAmount" name="donationAmount" required min="100" aria-label="Donation amount in Zambian Kwacha" placeholder="Enter amount">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Donation Type *</label>
+                                <div class="donation-options">
+                                    <label class="radio-label">
+                                        <input type="radio" name="donationType" value="onetime" required checked> One-time
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="donationType" value="monthly"> Monthly
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="donationPurpose">Donation Purpose</label>
+                                <select id="donationPurpose" name="donationPurpose" aria-label="Select donation purpose">
+                                    <option value="">Select a focus area (Optional)</option>
+                                    <option value="dropin">Drop-in Center</option>
+                                    <option value="shelter">Shelter & Home</option>
+                                    <option value="education">Education & Skills</option>
+                                    <option value="prevention">Prevention Program</option>
+                                    <option value="general">General Support</option>
+                                </select>
+                            </div>
+
+                            <button type="submit" class="btn btn-submit" aria-label="Submit donation">
+                                <span class="button-text">Donate Now</span>
+                                <span class="loading-spinner" style="display:none;"></span>
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="donation-info">
+                        <div class="donation-card">
+                            <i class="fas fa-heart"></i>
+                            <h4>Every Amount Helps</h4>
+                            <p>Whether K100 or K10,000, your donation makes a real difference in a child's life.</p>
+                        </div>
+                        <div class="donation-card">
+                            <i class="fas fa-lock"></i>
+                            <h4>Secure & Transparent</h4>
+                            <p>All donations are processed securely and we provide detailed reports on how your funds are used.</p>
+                        </div>
+                        <div class="donation-card">
+                            <i class="fas fa-receipt"></i>
+                            <h4>Tax Deductible</h4>
+                            <p>Registered charitable organization - your donation may be tax deductible. Receipt provided.</p>
+                        </div>
+                        <div class="donation-card">
+                            <i class="fas fa-calendar"></i>
+                            <h4>Monthly Support</h4>
+                            <p>Consider becoming a monthly donor and provide sustained support for our programs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Volunteer Form Section -->
+        <section class="volunteer-section" id="volunteer-form">
+            <div class="container">
+                <h2>Become a Volunteer</h2>
+                <p class="subtitle">Join our mission to transform lives. Share your skills and passion with our community.</p>
+                
+                <div class="volunteer-container">
+                    <form id="volunteerForm" onsubmit="processVolunteerForm(event)">
+                        <div class="form-group">
+                            <label for="volunteerName">Full Name *</label>
+                            <input type="text" id="volunteerName" name="volunteerName" required aria-label="Your full name" placeholder="Your name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="volunteerEmail">Email Address *</label>
+                            <input type="email" id="volunteerEmail" name="volunteerEmail" required aria-label="Your email address" placeholder="your@email.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="volunteerPhone">Phone Number *</label>
+                            <input type="tel" id="volunteerPhone" name="volunteerPhone" required aria-label="Your phone number" placeholder="+260 XXX XXX XXX">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="volunteerProfession">Professional Background *</label>
+                            <select id="volunteerProfession" name="volunteerProfession" required aria-label="Select your profession">
+                                <option value="">Select your profession</option>
+                                <option value="healthcare">Healthcare Professional (Doctor, Nurse, Counselor)</option>
+                                <option value="education">Educator (Teacher, Trainer, Tutor)</option>
+                                <option value="social-work">Social Worker or Social Services</option>
+                                <option value="psychology">Psychologist or Mental Health Specialist</option>
+                                <option value="engineering">Engineer or Technical Specialist</option>
+                                <option value="business">Business or Entrepreneurship Professional</option>
+                                <option value="finance">Finance or Accounting Professional</option>
+                                <option value="legal">Legal Professional (Lawyer, Paralegal)</option>
+                                <option value="it">IT or Computer Professional</option>
+                                <option value="hospitality">Hospitality or Food Service</option>
+                                <option value="skilled-trade">Skilled Tradesman (Carpenter, Plumber, Electrician)</option>
+                                <option value="arts">Arts, Music, or Creative Professional</option>
+                                <option value="sports">Sports Coach or Physical Education</option>
+                                <option value="agriculture">Agriculture or Environmental Professional</option>
+                                <option value="construction">Construction or Building Professional</option>
+                                <option value="logistics">Logistics or Supply Chain Professional</option>
+                                <option value="marketing">Marketing or Communications Professional</option>
+                                <option value="retired">Retired Professional</option>
+                                <option value="student">Student or Recent Graduate</option>
+                                <option value="general">General (No specific background)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="volunteerInterest">Area of Interest *</label>
+                            <select id="volunteerInterest" name="volunteerInterest" required aria-label="Select area of interest">
+                                <option value="">Select your area of interest</option>
+                                <option value="dropin">Drop-in Center Support</option>
+                                <option value="shelter">Shelter & Home Care</option>
+                                <option value="education">Education & Skills Training</option>
+                                <option value="counseling">Counseling & Mental Health</option>
+                                <option value="medical">Medical & Health Support</option>
+                                <option value="vocational">Vocational Training</option>
+                                <option value="mentorship">Mentorship & Life Coaching</option>
+                                <option value="family">Family Reintegration Support</option>
+                                <option value="fundraising">Fundraising & Advocacy</option>
+                                <option value="administration">Administration & Office Support</option>
+                                <option value="construction">Construction & Maintenance</option>
+                                <option value="cooking">Cooking & Food Preparation</option>
+                                <option value="it-tech">IT & Technology Support</option>
+                                <option value="sports">Sports & Recreation Activities</option>
+                                <option value="spiritual">Spiritual Guidance & Programs</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="volunteerAvailability">Availability *</label>
+                            <select id="volunteerAvailability" name="volunteerAvailability" required aria-label="Select your availability">
+                                <option value="">Select your availability</option>
+                                <option value="fulltime">Full-time (30+ hours/week)</option>
+                                <option value="parttime">Part-time (10-29 hours/week)</option>
+                                <option value="weekends">Weekends Only</option>
+                                <option value="weekdays">Weekdays Only</option>
+                                <option value="flexible">Flexible/As Needed</option>
+                                <option value="shortterm">Short-term Project (Less than 3 months)</option>
+                                <option value="remote">Remote/Online Only</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="volunteerExperience">Experience Level *</label>
+                            <select id="volunteerExperience" name="volunteerExperience" required aria-label="Select your experience level">
+                                <option value="">Select your experience level</option>
+                                <option value="no-experience">No Volunteer Experience</option>
+                                <option value="some-experience">Some Volunteer Experience (1-3 years)</option>
+                                <option value="experienced">Experienced Volunteer (3+ years)</option>
+                                <option value="professional">Professional in Field</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="volunteerMessage">Tell Us About Yourself & Why You Want to Volunteer</label>
+                            <textarea id="volunteerMessage" name="volunteerMessage" rows="5" aria-label="Tell us about yourself" placeholder="Share your passion, skills, and what motivated you to volunteer..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="volunteerAgree" name="volunteerAgree" required>
+                                I understand that volunteer work involves working with vulnerable children and am willing to undergo background checks and training *
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-submit" aria-label="Submit volunteer application">
+                            <span class="button-text">Submit Application</span>
+                            <span class="loading-spinner" style="display:none;"></span>
+                        </button>
+                    </form>
+
+                    <div class="volunteer-info">
+                        <div class="volunteer-card">
+                            <i class="fas fa-heart"></i>
+                            <h4>Make a Real Impact</h4>
+                            <p>Your skills and compassion can transform a child's life and help them find hope and opportunity.</p>
+                        </div>
+                        <div class="volunteer-card">
+                            <i class="fas fa-users"></i>
+                            <h4>Join Our Community</h4>
+                            <p>Become part of a dedicated team of passionate individuals committed to rescuing and rehabilitating children.</p>
+                        </div>
+                        <div class="volunteer-card">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h4>Grow & Learn</h4>
+                            <p>Gain valuable experience, develop new skills, and expand your network while making a difference.</p>
+                        </div>
+                        <div class="volunteer-card">
+                            <i class="fas fa-handshake"></i>
+                            <h4>Flexible Opportunities</h4>
+                            <p>Whether full-time, part-time, or project-based, find a volunteer role that fits your schedule and skills.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-section" id="contact-form">
+            <div class="container">
+                <h2>Get In Touch</h2>
+                <p class="subtitle">Have questions? Want to volunteer? Let's connect!</p>
+                
+                <div class="contact-container">
+                    <form id="contactForm" onsubmit="processContactForm(event)">
+                        <div class="form-group">
+                            <label for="contactName">Full Name *</label>
+                            <input type="text" id="contactName" name="contactName" required aria-label="Your full name" placeholder="Your name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactEmail">Email Address *</label>
+                            <input type="email" id="contactEmail" name="contactEmail" required aria-label="Your email address" placeholder="your@email.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactPhone">Phone Number</label>
+                            <input type="tel" id="contactPhone" name="contactPhone" aria-label="Your phone number" placeholder="+260 XXX ">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactSubject">Subject *</label>
+                            <select id="contactSubject" name="contactSubject" required aria-label="Select subject">
+                                <option value="">Select a subject</option>
+                                <option value="volunteer">Volunteer Inquiry</option>
+                                <option value="partnership">Partnership Opportunity</option>
+                                <option value="sponsorship">Child Sponsorship</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="media">Media Inquiry</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactMessage">Message *</label>
+                            <textarea id="contactMessage" name="contactMessage" rows="5" required aria-label="Your message" placeholder="Tell us how we can help..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-submit" aria-label="Send message">
+                            <span class="button-text">Send Message</span>
+                            <span class="loading-spinner" style="display:none;"></span>
+                        </button>
+                    </form>
+
+                    <div class="contact-info">
+                        <div class="info-card">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h4>Address</h4>
+                            <p>Lusaka, Zambia</p>
+                        </div>
+                        <div class="info-card">
+                            <i class="fas fa-envelope"></i>
+                            <h4>Email</h4>
+                            <p><a href="mailto:info@chisomo.org">info@chisomo.org</a></p>
+                        </div>
+                        <div class="info-card">
+                            <i class="fas fa-phone"></i>
+                            <h4>Phone</h4>
+                            <p>+260 977883715</p>
+                        </div>
+                        <div class="info-card">
+                            <i class="fas fa-registered"></i>
+                            <h4>Registration</h4>
+                            <p>ORS/102/66/2312</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Success Messages -->
+        <div id="successMessage" class="success-message" role="alert" aria-live="polite" style="display:none;">
+            <i class="fas fa-check-circle"></i>
+            <p id="successText"></p>
+        </div>
+
+        <div id="errorMessage" class="error-message" role="alert" aria-live="polite" style="display:none;">
+            <i class="fas fa-exclamation-circle"></i>
+            <p id="errorText"></p>
+        </div>
+
+        <!-- Footer -->
+        <footer id="contact">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>About Chisomo</h3>
+                        <p>An interdenominational para-church organization dedicated to rescuing and rehabilitating street children in Zambia since 1992.</p>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Quick Links</h3>
+                        <a href="#" onclick="scrollToSection('about'); return false;">About Us</a>
+                        <a href="#" onclick="scrollToSection('programs'); return false;">Programs</a>
+                        <a href="#" onclick="scrollToSection('values'); return false;">Our Values</a>
+                        <a href="#" onclick="scrollToSection('contact-form'); return false;">Contact</a>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Contact Us</h3>
+                        <p>Lusaka, Zambia</p>
+                        <p>Phone: <a href="tel:+260977883715">+260 977 883 715</a></p>
+                        <p>Email: <a href="mailto:info@chisomo.org">info@chisomo.org</a></p>
+                        <p>Registration: ORS/102/66/2312</p>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Get Involved</h3>
+                        <a href="#" onclick="showPage('getInvolved'); return false;">Volunteer</a>
+                        <a href="#" onclick="scrollToSection('donate'); return false;">Donate</a>
+                        <a href="#" onclick="showPage('getInvolved'); return false;">Partner with Us</a>
+                        <a href="#" onclick="showPage('getInvolved'); return false;">Sponsor a Child</a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Chisomo Centers. All rights reserved. | Registered Para-Church Organization</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- GET INVOLVED PAGE -->
+    <div id="getInvolved" class="page">
+        <div class="program-hero">
+            <div class="container">
+                <div class="icon-large"><i class="fas fa-handshake"></i></div>
+                <h1>Get Involved</h1>
+                <p>Make a tangible difference in the lives of children. Discover how you can contribute your time, skills, and resources to our mission.</p>
+            </div>
+            <video autoplay muted loop playsinline class="hero-video-bg">
+                <source src="images/holistic-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="program-details">
+            <div class="container">
+                <a href="#" onclick="showPage('home'); return false;" class="back-button">
+                    <i class="fas fa-arrow-left"></i> Back to Home
+                </a>
+
+                <div class="program-section">
+                    <h2>Ways to Make a Difference</h2>
+                    <p>Whether you have a few hours or a lifetime of skills to share, there's a meaningful way for you to contribute to our mission of rescuing and rehabilitating street children.</p>
+                </div>
+
+                <!-- Volunteer Card -->
+                <div class="involvement-grid">
+                    <div class="involvement-card">
+                        <div class="involvement-header volunteer-accent">
+                            <i class="fas fa-people-arrows"></i>
+                            <h3>Volunteer</h3>
+                        </div>
+                        <div class="involvement-content">
+                            <p>Share your skills and passion by volunteering your time. Whether you're a healthcare professional, educator, counselor, or simply have a caring heart, we have opportunities for you.</p>
+                            <ul class="involvement-list">
+                                <li><i class="fas fa-check"></i> Flexible schedules available</li>
+                                <li><i class="fas fa-check"></i> No experience necessary</li>
+                                <li><i class="fas fa-check"></i> Multiple areas to contribute</li>
+                                <li><i class="fas fa-check"></i> Training provided</li>
+                                <li><i class="fas fa-check"></i> Impact children's lives directly</li>
+                            </ul>
+                            <a href="#" onclick="scrollToSection('volunteer-form'); return false;" class="btn btn-small">Learn More & Apply</a>
+                        </div>
+                    </div>
+
+                    <!-- Donate Card -->
+                    <div class="involvement-card">
+                        <div class="involvement-header donate-accent">
+                            <i class="fas fa-heart"></i>
+                            <h3>Donate</h3>
+                        </div>
+                        <div class="involvement-content">
+                            <p>Your financial contribution directly supports our programs - from providing meals and medical care to education and family reintegration. Every amount makes a real difference.</p>
+                            <ul class="involvement-list">
+                                <li><i class="fas fa-check"></i> Tax-deductible donations</li>
+                                <li><i class="fas fa-check"></i> One-time or monthly giving</li>
+                                <li><i class="fas fa-check"></i> Transparent fund allocation</li>
+                                <li><i class="fas fa-check"></i> Impact reports provided</li>
+                                <li><i class="fas fa-check"></i> 100% of donations go to programs</li>
+                            </ul>
+                            <a href="#" onclick="scrollToSection('donate'); return false;" class="btn btn-small">Make a Donation</a>
+                        </div>
+                    </div>
+
+                    <!-- Sponsor Card -->
+                    <div class="involvement-card">
+                        <div class="involvement-header sponsor-accent">
+                            <i class="fas fa-star"></i>
+                            <h3>Sponsor a Child</h3>
+                        </div>
+                        <div class="involvement-content">
+                            <p>Make a lasting impact by sponsoring a child's journey from street life to a brighter future. Receive updates and maintain a meaningful connection with your sponsored child.</p>
+                            <ul class="involvement-list">
+                                <li><i class="fas fa-check"></i> Personal updates from child</li>
+                                <li><i class="fas fa-check"></i> Photo & progress reports</li>
+                                <li><i class="fas fa-check"></i> Direct support for education</li>
+                                <li><i class="fas fa-check"></i> Opportunity for correspondence</li>
+                                <li><i class="fas fa-check"></i> Transform a child's life</li>
+                            </ul>
+                            <a href="#" onclick="scrollToSection('contact-form'); return false;" class="btn btn-small">Sponsor a Child</a>
+                        </div>
+                    </div>
+
+                    <!-- Partnership Card -->
+                    <div class="involvement-card">
+                        <div class="involvement-header partner-accent">
+                            <i class="fas fa-building"></i>
+                            <h3>Partner With Us</h3>
+                        </div>
+                        <div class="involvement-content">
+                            <p>Organizations and businesses can partner with Chisomo to maximize community impact. From corporate volunteering to sponsoring programs, let's work together for change.</p>
+                            <ul class="involvement-list">
+                                <li><i class="fas fa-check"></i> Corporate volunteering programs</li>
+                                <li><i class="fas fa-check"></i> Program sponsorships</li>
+                                <li><i class="fas fa-check"></i> In-kind donations</li>
+                                <li><i class="fas fa-check"></i> Employee engagement opportunities</li>
+                                <li><i class="fas fa-check"></i> Custom partnership options</li>
+                            </ul>
+                            <a href="#" onclick="scrollToSection('contact-form'); return false;" class="btn btn-small">Get in Touch</a>
+                        </div>
+                    </div>
+
+                    <!-- Advocate Card -->
+                    <div class="involvement-card">
+                        <div class="involvement-header advocate-accent">
+                            <i class="fas fa-megaphone"></i>
+                            <h3>Advocate & Spread Awareness</h3>
+                        </div>
+                        <div class="involvement-content">
+                            <p>Help us raise awareness about street children and the importance of intervention. Share our mission through social media, events, and community engagement.</p>
+                            <ul class="involvement-list">
+                                <li><i class="fas fa-check"></i> Share on social media</li>
+                                <li><i class="fas fa-check"></i> Host awareness events</li>
+                                <li><i class="fas fa-check"></i> Speak about our mission</li>
+                                <li><i class="fas fa-check"></i> Collect donations for specific needs</li>
+                                <li><i class="fas fa-check"></i> Amplify our impact</li>
+                            </ul>
+                            <a href="#" onclick="scrollToSection('contact-form'); return false;" class="btn btn-small">Learn More</a>
+                        </div>
+                    </div>
+
+                    <!-- Professional Services Card -->
+                    <div class="involvement-card">
+                        <div class="involvement-header service-accent">
+                            <i class="fas fa-briefcase"></i>
+                            <h3>Donate Professional Services</h3>
+                        </div>
+                        <div class="involvement-content">
+                            <p>Professionals - donate your expertise. We need lawyers, accountants, IT specialists, counselors, and other professionals to support our organization's growth.</p>
+                            <ul class="involvement-list">
+                                <li><i class="fas fa-check"></i> Legal consultation</li>
+                                <li><i class="fas fa-check"></i> Financial advisory</li>
+                                <li><i class="fas fa-check"></i> IT & technical support</li>
+                                <li><i class="fas fa-check"></i> Professional training</li>
+                                <li><i class="fas fa-check"></i> Strategic consulting</li>
+                            </ul>
+                            <a href="#" onclick="scrollToSection('contact-form'); return false;" class="btn btn-small">Offer Your Skills</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Section -->
+                <div class="program-section faq-section">
+                    <h2>Frequently Asked Questions</h2>
+                    <div class="faq-grid">
+                        <div class="faq-card">
+                            <h4><i class="fas fa-question-circle"></i> Do I need experience to volunteer?</h4>
+                            <p>No experience is necessary! We provide training and support. Whether you're skilled or simply caring, there's a role for you. Professional expertise is always welcome but not required.</p>
+                        </div>
+                        <div class="faq-card">
+                            <h4><i class="fas fa-question-circle"></i> What about background checks?</h4>
+                            <p>Yes, all volunteers working with children undergo background checks. This is to ensure the safety and protection of the children in our care. This is a non-negotiable requirement.</p>
+                        </div>
+                        <div class="faq-card">
+                            <h4><i class="fas fa-question-circle"></i> How much does sponsoring a child cost?</h4>
+                            <p>Child sponsorship is flexible and customizable. You can choose the level of support that fits your budget - from partial support to full sponsorship. Contact us for specific details.</p>
+                        </div>
+                        <div class="faq-card">
+                            <h4><i class="fas fa-question-circle"></i> Are donations tax-deductible?</h4>
+                            <p>Yes! Chisomo Centers is a registered charitable para-church organization. All donations are tax-deductible. We provide receipts for all contributions.</p>
+                        </div>
+                        <div class="faq-card">
+                            <h4><i class="fas fa-question-circle"></i> Can I volunteer remotely?</h4>
+                            <p>Yes! We have opportunities for remote volunteers - from administration and fundraising to IT support and online mentoring. Contact us to discuss remote options.</p>
+                        </div>
+                        <div class="faq-card">
+                            <h4><i class="fas fa-question-circle"></i> How often do you report on fund usage?</h4>
+                            <p>We provide annual impact reports detailing how funds are used. Sponsors receive regular updates about their sponsored child. We believe in complete transparency.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA Section -->
+                <div class="cta cta-involved">
+                    <h2>Ready to Make a Difference?</h2>
+                    <p>Choose your way to get involved and start transforming lives today. Every action, big or small, matters.</p>
+                    <div class="cta-buttons">
+                        <a href="#" onclick="scrollToSection('volunteer-form'); return false;" class="btn">Become a Volunteer</a>
+                        <a href="#" onclick="scrollToSection('donate'); return false;" class="btn btn-outline">Make a Donation</a>
+                        <a href="#" onclick="scrollToSection('contact-form'); return false;" class="btn">Get in Touch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DROP-IN CENTER PAGE -->
+    <div id="dropin" class="page">
+        <div class="program-hero">
+            <div class="container">
+                <div class="icon-large"><i class="fas fa-door-open"></i></div>
+                <h1>Drop-in Center</h1>
+                <p>A welcoming sanctuary where street children can find immediate support, nourishment, and hope</p>
+            </div>
+        </div>
+        <div class="program-details">
+            <div class="container">
+                <a href="dropin" onclick="showPage('dropin'); return false;" class="back-button">
+                    <i class="fas fa-arrow-left"></i> Back to Programs
+                </a>
+                
+                <div class="program-section">
+                    <h2>What We Offer</h2>
+                    <p>Our Drop-in Center serves as the first point of contact for many street children. It's a safe, non-judgmental space where children can access essential services without any commitment, helping them take the first steps toward a better life.</p>
+                    
+                    <div class="feature-grid">
+                        <div class="feature-box">
+                            <i class="fas fa-utensils"></i>
+                            <h3>Daily Meals</h3>
+                            <p>Nutritious breakfast and lunch provided every day</p>
+                        </div>
+                        <div class="feature-box">
+                            <i class="fas fa-shower"></i>
+                            <h3>Hygiene Facilities</h3>
+                            <p>Access to showers, toilets, and clean clothing</p>
+                        </div>
+                        <div class="feature-box">
+                            <i class="fas fa-first-aid"></i>
+                            <h3>Basic Medical Care</h3>
+                            <p>First aid, wound treatment, and health screening</p>
+                        </div>
+                        <div class="feature-box">
+                            <i class="fas fa-user-md"></i>
+                            <h3>Counseling Support</h3>
+                            <p>One-on-one sessions with trained counselors</p>
+                        </div>
+                        <div class="feature-box">
+                            <i class="fas fa-gamepad"></i>
+                            <h3>Recreation Activities</h3>
+                            <p>Sports, games, and creative activities</p>
+                        </div>
+                        <div class="feature-box">
+                            <i class="fas fa-handshake"></i>
+                            <h3>Trust Building</h3>
+                            <p>Building relationships and confidence with staff</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="program-section">
+                    <h2>Our Approach</h2>
+                    <p>We understand that trust must be earned. Our Drop-in Center operates with an open-door policy, allowing children to come and go freely while gradually building relationships. This low-barrier approach helps children feel safe and respected, often leading them to engage more deeply with our other programs.</p>
+                </div>
+
+                <div class="program-section">
+                    <h2>Impact</h2>
+                    <div class="impact-numbers">
+                        <div class="impact-box">
+                            <span class="number">50+</span>
+                            <span>Children Daily</span>
+                        </div>
+                        <div class="impact-box">
+                            <span class="number">15,000+</span>
+                            <span>Meals Served Annually</span>
+                        </div>
+                        <div class="impact-box">
+                            <span class="number">70%</span>
+                            <span>Transition to Full Programs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cta">
+                    <h2>Support Our Drop-in Center</h2>
+                    <p>Your donation helps us provide daily meals, medical care, and hope to children living on the streets</p>
+                    <a href="#" class="btn">Donate Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    <!-- DROP-IN CENTER PAGE -->
+    <div id="dropin" class="page">
+        <div class="program-hero">
+            <div class="container">
+                <div class="icon-large"><i class="fas fa-door-open"></i></div>
+                <h1>Drop-in Center</h1>
+                <p>A welcoming sanctuary where street children can find immediate support, nourishment, and hope</p>
+            </div>
+        </div>
+        <div class="program-details">
+            <div class="container">
+                <a href="#" onclick="showPage('home'); return false;" class="back-button">
+                    <i class="fas fa-arrow-left"></i> Back to Programs
+                </a>
+                
+                <div class="program-section">
+                    <h2>What We Offer</h2>
+                    <p>Our Drop-in Center serves as the first point of contact for many street children. It's a safe, non-judgmental space where children can access essential services without any commitment, helping them take the first steps toward a better life.</p>
+                    
+                    <div class="feature-grid">
+                        <div class="feature-box">
+                            <i class="fas fa-utensils"></i>
+                            <h3>Daily Meals</h3>
+                            <p>Nutritious breakfast and lunch provided every day</p>
+                        </div>
+                        <div class="feature-box">
+                            <i class="fas fa-shower"></i>
+                            <h3>Hygiene Facilities</h3>
+                            <p>Access to showers, toilets, and clean clothing</p>
+                        </div>
+                        <div class="feature-box">
+                            <i class="fas fa-first-aid"></i>
+                            <h3>Basic Medical Care</h3>
+                            <p>First aid, wound treatment, and health screening</p>
+                        </div>
+                        <div class="feature-box">
+                            <i class="fas fa-user-md"></i>
+                            <h3>Counseling Support</h3>
+                            <p>One-on-one sessions with trained counselors</p>
+                        </div>
+                        <div class="feature-box">
+                            <i class="fas fa-gamepad"></i>
+                            <h3>Recreation Activities</h3>
+                            <p>Sports, games, and creative activities</p>
+                        </div>
+                        <div class="feature-box">
+                            <i class="fas fa-handshake"></i>
+                            <h3>Trust Building</h3>
+                            <p>Building relationships and confidence with staff</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="program-section">
+                    <h2>Our Approach</h2>
+                    <p>We understand that trust must be earned. Our Drop-in Center operates with an open-door policy, allowing children to come and go freely while gradually building relationships. This low-barrier approach helps children feel safe and respected, often leading them to engage more deeply with our other programs.</p>
+                </div>
+
+                <div class="program-section">
+                    <h2>Impact</h2>
+                    <div class="impact-numbers">
+                        <div class="impact-box">
+                            <span class="number">50+</span>
+                            <span>Children Daily</span>
+                        </div>
+                        <div class="impact-box">
+                            <span class="number">15,000+</span>
+                            <span>Meals Served Annually</span>
+                        </div>
+                        <div class="impact-box">
+                            <span class="number">70%</span>
+                            <span>Transition to Full Programs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cta">
+                    <h2>Support Our Drop-in Center</h2>
+                    <p>Your donation helps us provide daily meals, medical care, and hope to children living on the streets</p>
+                    <a href="#" class="btn">Donate Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SHELTER & HOME PAGE -->
+    <div id="shelter" class="page">
+        <div class="program-hero">
+            <div class="container">
+                <div class="icon-large"><i class="fas fa-home"></i></div>
+                <h1>Shelter & Home</h1>
+                <p>Providing a safe, loving home where children can heal, grow, and rediscover childhood</p>
+            </div>
+        </div>
+        <div class="program-details">
+            <div class="container">
+                <a href="#" onclick="showPage('home'); return false;" class="back-button">
+                    <i class="fas fa-arrow-left"></i> Back to Programs
+                </a>
+                
+                <div class="program-section">
+                    <h2>A Place to Call Home</h2>
+                    <p>Our residential shelter provides a stable, nurturing environment for children who need extended care. Here, children experience the warmth of a family setting, regular routines, and the security they need to begin healing from their traumatic experiences on the streets.</p>
+                    
+                    <div class="feature-grid">
+                        <div class="feature-box">
+                            <i class="fas fa-bed"></i>
+                            <h3>Safe Accommodation</h3>
+                            <p>Clean, comfortable sleeping quarters with personal space</p>
+                        </div>
+                        <div class="feature-box">
+                            <i class="fas fa-drumstick-bite"></i>
+                            <h3>Three Meals Daily</h3>
+                            <p>Balanced, nutritious meals prepared with care</p>
+                        </div>
+                        <div class="feature-box">
+                            <i class="fas fa-tshirt"></i>
+                            <h3>Clothing & Essentials</h3>
+                            <p>Clean clothes and personal care items</p>
+                        </div>
+                        <div class="feature-box">
+                            <i class="fas fa-heartbeat"></i>
+                            <h3>Healthcare Access</h3>
+                            <p>Regular medical checkups and treatment</p>
+                        </div>
+                        <div class="feature-box">
+                            <i class="fas fa-user-friends"></i>
+                            <h3>House Parents</h3>
+                            <p>Dedicated caregivers providing parental guidance</p>
+                        </div>
+                        <div class="feature-box">
+                            <i class="fas fa-book-reader"></i>
+                            <h3>Life Skills Training</h3>
+                            <p>Learning essential daily living skills</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="program-section">
+                    <h2>Daily Life at the Shelter</h2>
+                    <p>Children follow a structured routine that includes school attendance, meal times, chores, recreation, and study hours. This predictability helps them feel secure and develops positive habits that will serve them throughout their lives.</p>
+                </div>
+
+                <div class="program-section">
+                    <h2>Impact Stories</h2>
+                    <div class="impact-numbers">
+                        <div class="impact-box">
+                            <span class="number">40</span>
+                            <span>Children in Residence</span>
+                        </div>
+                        <div class="impact-box">
+                            <span class="number">85%</span>
+                            <span>Successfully Reintegrated</span>
+                        </div>
+                        <div class="impact-box">
+                            <span class="number">24/7</span>
+                            <span>Care & Support</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cta">
+                    <h2>Help Provide a Home</h2>
+                    <p>Your support ensures children have a safe place to sleep, nutritious food, and caring adults in their lives</p>
+                    <a href="#" class="btn">Sponsor a Child</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- EDUCATION & SKILLS PAGE -->
+    <div id="education" class="page">
+        <div class="program-hero">
+            <div class="container">
+                <div class="icon-large"><i class="fas fa-graduation-cap"></i></div>
+                <h1>Education & Skills Training</h1>
+                <p>Empowering children with knowledge and skills for a brighter, self-sufficient future</p>
+            </div>
+        </div>
+        <div class="program-details">
+            <div class="container">
+                <a href="#" onclick="showPage('home'); return false;" class="back-button">
+                    <i class="fas fa-arrow-left"></i> Back to Programs
+                </a>
+                
+                <div class="program-section">
+                    <h2>Breaking the Cycle Through Education</h2>
+                    <p>Education is the most powerful tool for breaking the cycle of poverty and street life. Our comprehensive education program addresses the unique needs of children who have missed significant schooling, providing both formal education and practical vocational training.</p>
+                    
+                    <div class="feature-grid">
+                        <div class="feature-box">
+                            <i class="fas fa-school"></i>
+                            <h3>Formal Education</h3>
+                            <p>Primary and secondary school enrollment and support</p>
+                        </div>
+                        <div class="feature-box">
+                            <i class="fas fa-book"></i>
+                            <h3>Catch-up Classes</h3>
+                            <p>Remedial education for children behind in their studies</p>
+                        </div>
+                        <div class="feature-box">
+                            <i class="fas fa-tools"></i>
+                            <h3>Vocational Training</h3>
+                            <p>Carpentry, tailoring, mechanics, and computer skills</p>
+                        </div>
+                        <div class="feature-box">
+                            <i class="fas fa-pencil-ruler"></i>
+                            <h3>Art & Music</h3>
+                            <p>Creative expression through arts and cultural programs</p>
+                        </div>
+                        <div class="feature-box">
+                            <i class="fas fa-laptop"></i>
+                            <h3>Digital Literacy</h3>
+                            <p>Basic computer skills and technology training</p>
+                        </div>
+                        <div class="feature-box">
+                            <i class="fas fa-briefcase"></i>
+                            <h3>Job Readiness</h3>
+                            <p>Interview skills, CV writing, and workplace etiquette</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="program-section">
+                    <h2>Our Approach</h2>
+                    <p>We recognize that every child learns differently and at their own pace. Our teachers are specially trained to work with children who have experienced trauma and educational gaps. We provide individualized learning plans, small class sizes, and patient, encouraging instruction.</p>
+                </div>
+
+                <div class="program-section">
+                    <h2>Educational Success</h2>
+                    <div class="impact-numbers">
+                        <div class="impact-box">
+                            <span class="number">95%</span>
+                            <span>School Enrollment Rate</span>
+                        </div>
+                        <div class="impact-box">
+                            <span class="number">120+</span>
+                            <span>Vocational Graduates</span>
+                        </div>
+                        <div class="impact-box">
+                            <span class="number">80%</span>
+                            <span>Employment Success</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cta">
+                    <h2>Invest in Education</h2>
+                    <p>Your donation provides school fees, uniforms, books, and vocational training for children eager to learn</p>
+                    <a href="#" class="btn">Support Education</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAMILY REINTEGRATION PAGE -->
+    <div id="reintegration" class="page">
+        <div class="program-hero">
+            <div class="container">
+                <div class="icon-large"><i class="fas fa-users"></i></div>
+                <h1>Family Reintegration</h1>
+                <p>Reuniting children with their families and communities for lasting change</p>
+            </div>
+        </div>
+        <div class="program-details">
+            <div class="container">
+                <a href="#" onclick="showPage('home'); return false;" class="back-button">
+                    <i class="fas fa-arrow-left"></i> Back to Programs
+                </a>
+                
+                <div class="program-section">
+                    <h2>Reuniting Families</h2>
+                    <p>Family reintegration is at the heart of our mission. We believe that children thrive best in family environments. Our comprehensive reintegration program carefully prepares both children and families for successful reunification, addressing the root causes that led to family separation.</p>
+                    
+                    <div class="feature-grid">
+                        <div class="feature-box">
+                            <i class="fas fa-search"></i>
+                            <h3>Family Tracing</h3>
+                            <p>Locating and contacting children's families</p>
+                        </div>
+                        <div class="feature-box">
+                            <i class="fas fa-clipboard-check"></i>
+                            <h3>Assessment</h3>
+                            <p>Evaluating family readiness and home environment</p>
+                        </div>
+                        <div class="feature-box">
+                            <i class="fas fa-hands-helping"></i>
+                            <h3>Family Counseling</h3>
+                            <p>Addressing conflicts and building communication</p>
+                        </div>
+                        <div class="feature-box">
+                            <i class="fas fa-home"></i>
+                            <h3>Home Visits</h3>
+                            <p>Gradual reintroduction and monitored reunification</p>
+                        </div>
+                        <div class="feature-box">
+                            <i class="fas fa-hand-holding-usd"></i>
+                            <h3>Economic Support</h3>
+                            <p>Income-generating assistance for families</p>
+                        </div>
+                        <div class="feature-box">
+                            <i class="fas fa-eye"></i>
+                            <h3>Follow-up Care</h3>
+                            <p>Regular monitoring and ongoing family support</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="program-section">
+                    <h2>The Reintegration Process</h2>
+                    <p>Our process takes 6-12 months and includes thorough preparation, counseling, gradual home visits, and extended follow-up support. We work to address economic challenges, family dynamics, and community acceptance to ensure lasting success.</p>
+                </div>
+
+                <div class="program-section">
+                    <h2>Success Metrics</h2>
+                    <div class="impact-numbers">
+                        <div class="impact-box">
+                            <span class="number">200+</span>
+                            <span>Children Reintegrated</span>
+                        </div>
+                        <div class="impact-box">
+                            <span class="number">85%</span>
+                            <span>Successful Reunifications</span>
+                        </div>
+                        <div class="impact-box">
+                            <span class="number">2 Years</span>
+                            <span>Average Follow-up Period</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cta">
+                    <h2>Support Family Reunification</h2>
+                    <p>Help us bring families back together and provide the support they need to stay together</p>
+                    <a href="#" class="btn">Make a Difference</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PREVENTION PROGRAM PAGE -->
+    <div id="prevention" class="page">
+        <div class="program-hero">
+            <div class="container">
+                <div class="icon-large"><i class="fas fa-shield-alt"></i></div>
+                <h1>Women's Prevention Program</h1>
+                <p>Empowering families to keep children safe at home through economic support</p>
+            </div>
+        </div>
+        <div class="program-details">
+            <div class="container">
+                <a href="#" onclick="showPage('home'); return false;" class="back-button">
+                    <i class="fas fa-arrow-left"></i> Back to Programs
+                </a>
+                
+                <div class="program-section">
+                    <h2>Prevention is Better Than Cure</h2>
+                    <p>Our Women's Prevention Program works with at-risk families before children end up on the streets. By empowering mothers and caregivers with income-generating skills and business support, we address the root economic causes that often lead families to send children to work on the streets.</p>
+                    
+                    <div class="feature-grid">
+                        <div class="feature-box">
+                            <i class="fas fa-hand-holding-usd"></i>
+                            <h3>Microfinance Loans</h3>
+                            <p>Small business loans with mentorship support</p>
+                        </div>
+                        <div class="feature-box">
+                            <i class="fas fa-store"></i>
+                            <h3>Business Training</h3>
+                            <p>Entrepreneurship and financial literacy skills</p>
+                        </div>
+                        <div class="feature-box">
+                            <i class="fas fa-cut"></i>
+                            <h3>Skills Development</h3>
+                            <p>Tailoring, hairdressing, and other marketable skills</p>
+                        </div>
+                        <div class="feature-box">
+                            <i class="fas fa-users"></i>
+                            <h3>Support Groups</h3>
+                            <p>Peer support and community building</p>
+                        </div>
+                        <div class="feature-box">
+                            <i class="fas fa-chart-line"></i>
+                            <h3>Business Mentorship</h3>
+                            <p>Ongoing guidance and business development</p>
+                        </div>
+                        <div class="feature-box">
+                            <i class="fas fa-home"></i>
+                            <h3>Family Counseling</h3>
+                            <p>Support for healthy family relationships</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="program-section">
+                    <h2>How It Works</h2>
+                    <p>Women receive training in business skills and a chosen trade, followed by a small loan to start or expand their business. Our team provides ongoing mentorship and support. As family income increases, the risk of children being sent to the streets dramatically decreases.</p>
+                </div>
+
+                <div class="program-section">
+                    <h2>Prevention Impact</h2>
+                    <div class="impact-numbers">
+                        <div class="impact-box">
+                            <span class="number">150+</span>
+                            <span>Women Empowered</span>
+                        </div>
+                        <div class="impact-box">
+                            <span class="number">500+</span>
+                            <span>Children Protected</span>
+                        </div>
+                        <div class="impact-box">
+                            <span class="number">90%</span>
+                            <span>Business Success Rate</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cta">
+                    <h2>Prevent Street Life</h2>
+                    <p>Support our prevention work to keep vulnerable children safely with their families</p>
+                    <a href="#" class="btn">Empower Families</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HOLISTIC CARE PAGE -->
+    <div id="holistic" class="page">
+        <div class="program-hero">
+            <div class="container">
+                <div class="icon-large"><i class="fas fa-heart"></i></div>
+                <h1>Holistic Care</h1>
+                <p>Addressing the complete well-being of children: body, mind, and spirit</p>
+            </div>
+        </div>
+        <div class="program-details">
+            <div class="container">
+                <a href="#" onclick="showPage('home'); return false;" class="back-button">
+                    <i class="fas fa-arrow-left"></i> Back to Programs
+                </a>
+                
+                <div class="program-section">
+                    <h2>Complete Care for Complete Healing</h2>
+                    <p>Street life affects every aspect of a child's being. Our holistic care approach addresses physical health, emotional wounds, and spiritual needs. Rooted in Christian values, we provide comprehensive support that recognizes each child as a whole person deserving of dignity, love, and hope.</p>
+                    
+                    <div class="feature-grid">
+                        <div class="feature-box">
+                            <i class="fas fa-heartbeat"></i>
+                            <h3>Medical Care</h3>
+                            <p>Healthcare, treatment, and regular checkups</p>
+                        </div>
+                        <div class="feature-box">
+                            <i class="fas fa-brain"></i>
+                            <h3>Mental Health</h3>
+                            <p>Trauma counseling and psychological support</p>
+                        </div>
+                        <div class="feature-box">
+                            <i class="fas fa-praying-hands"></i>
+                            <h3>Spiritual Guidance</h3>
+                            <p>Christian discipleship and spiritual nurture</p>
+                        </div>
+                        <div class="feature-box">
+                            <i class="fas fa-smile"></i>
+                            <h3>Emotional Support</h3>
+                            <p>Building self-esteem and emotional resilience</p>
+                        </div>
+                        <div class="feature-box">
+                            <i class="fas fa-running"></i>
+                            <h3>Physical Fitness</h3>
+                            <p>Sports, recreation, and physical development</p>
+                        </div>
+                        <div class="feature-box">
+                            <i class="fas fa-users-cog"></i>
+                            <h3>Social Skills</h3>
+                            <p>Teaching healthy relationships and communication</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="program-section">
+                    <h2>Our Faith-Based Approach</h2>
+                    <p>As an interdenominational para-church organization, we believe that lasting transformation comes through the gospel of Jesus Christ. We provide spiritual guidance alongside practical support, helping children discover their worth, purpose, and hope for the future.</p>
+                </div>
+
+                <div class="program-section">
+                    <h2>Transformation Through Care</h2>
+                    <div class="impact-numbers">
+                        <div class="impact-box">
+                            <span class="number">100%</span>
+                            <span>Receive Medical Care</span>
+                        </div>
+                        <div class="impact-box">
+                            <span class="number">Weekly</span>
+                            <span>Counseling Sessions</span>
+                        </div>
+                        <div class="impact-box">
+                            <span class="number">Daily</span>
+                            <span>Spiritual Activities</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cta">
+                    <h2>Support Holistic Healing</h2>
+                    <p>Help us provide complete care that addresses every aspect of a child's well-being</p>
+                    <a href="#" class="btn">Partner With Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

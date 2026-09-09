@@ -370,3 +370,22 @@ Happy reading and enjoy your modernized website!
 Documentation Version: 1.0  
 Last Updated: December 24, 2025  
 
+---
+
+## Deployment
+
+To run the site with working forms:
+
+1. Make sure [Node.js](https://nodejs.org/) (v18+) is installed.
+2. From the Chisomo project root, run `npm install` to install the optional Stripe and dotenv packages.
+3. Copy `.env.example` to `.env` and fill in your keys:
+   - `STRIPE_SECRET_KEY` and `STRIPE_PUBLISHABLE_KEY` for live card payments (get them from [Stripe](https://dashboard.stripe.com/apikeys)).
+   - `BASE_URL` with your public site URL in production.
+4. Run `npm start` (or `node server.js`) to start the backend server.
+5. Open `http://localhost:3000` in your browser.
+6. Form submissions are saved to the `data/` folder.
+
+**Without Stripe:** if no `STRIPE_SECRET_KEY` is set, the donation form will still be recorded locally so you can test the flow.
+
+For production, deploy both the static files (`chisomocentersorg/`) and the API (`server.js`) to your hosting provider.
+

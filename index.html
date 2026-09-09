@@ -635,9 +635,109 @@
                         <div class="volunteer-card">
                             <i class="fas fa-handshake"></i>
                             <h4>Flexible Opportunities</h4>
-                            <p>Whether full-time, part-time, or project-based, find a volunteer role that fits your schedule and skills.</p>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Careers & Project Proposals Section -->
+        <section class="contact-section" id="careers-proposals">
+            <div class="container">
+                <h2>Careers & Project Proposals</h2>
+                <p class="subtitle">Join our team or propose a project that supports our mission.</p>
+                
+                <div class="contact-container">
+                    <form id="careerForm" onsubmit="processCareerForm(event)">
+                        <h3>Career Application</h3>
+                        <div class="form-group">
+                            <label for="careerName">Full Name *</label>
+                            <input type="text" id="careerName" name="careerName" required aria-label="Your full name" placeholder="Your name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="careerEmail">Email Address *</label>
+                            <input type="email" id="careerEmail" name="careerEmail" required aria-label="Your email address" placeholder="your@email.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="careerPhone">Phone Number *</label>
+                            <input type="tel" id="careerPhone" name="careerPhone" required aria-label="Your phone number" placeholder="+260 XXX XXX XXX">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="careerRole">Position of Interest *</label>
+                            <select id="careerRole" name="careerRole" required aria-label="Position of interest">
+                                <option value="">Select a position</option>
+                                <option value="social-worker">Social Worker</option>
+                                <option value="counselor">Counselor</option>
+                                <option value="teacher-educator">Teacher / Educator</option>
+                                <option value="nurse-medic">Nurse / Medical Officer</option>
+                                <option value="administration">Administration Officer</option>
+                                <option value="it-support">IT Support</option>
+                                <option value="fundraising">Fundraising Officer</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="careerExperience">Relevant Experience</label>
+                            <textarea id="careerExperience" name="careerExperience" rows="4" aria-label="Relevant experience" placeholder="Briefly describe your experience..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="careerSummary">Link to CV / Online Profile</label>
+                            <input type="url" id="careerSummary" name="careerSummary" aria-label="Link to CV or online profile" placeholder="https://linkedin.com/in/yourprofile">
+                        </div>
+
+                        <button type="submit" class="btn btn-submit" aria-label="Submit career application">
+                            <span class="button-text">Submit Application</span>
+                            <span class="loading-spinner" style="display:none;"></span>
+                        </button>
+                    </form>
+
+                    <form id="proposalForm" onsubmit="processProposalForm(event)">
+                        <h3>Project Proposal</h3>
+                        <div class="form-group">
+                            <label for="proposalName">Full Name *</label>
+                            <input type="text" id="proposalName" name="proposalName" required aria-label="Your full name" placeholder="Your name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="proposalEmail">Email Address *</label>
+                            <input type="email" id="proposalEmail" name="proposalEmail" required aria-label="Your email address" placeholder="your@email.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="proposalOrganization">Organization (if any)</label>
+                            <input type="text" id="proposalOrganization" name="proposalOrganization" aria-label="Organization" placeholder="Organization name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="proposalTitle">Project Title *</label>
+                            <input type="text" id="proposalTitle" name="proposalTitle" required aria-label="Project title" placeholder="Project title">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="proposalBudget">Estimated Budget (ZMW)</label>
+                            <input type="number" id="proposalBudget" name="proposalBudget" min="0" aria-label="Estimated budget" placeholder="e.g. 50000">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="proposalTimeline">Proposed Timeline</label>
+                            <input type="text" id="proposalTimeline" name="proposalTimeline" aria-label="Proposed timeline" placeholder="e.g. 6 months">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="proposalSummary">Project Summary *</label>
+                            <textarea id="proposalSummary" name="proposalSummary" rows="4" required aria-label="Project summary" placeholder="Describe the project, its goals, and expected impact..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-submit" aria-label="Submit project proposal">
+                            <span class="button-text">Submit Proposal</span>
+                            <span class="loading-spinner" style="display:none;"></span>
+                        </button>
+                    </form>
                 </div>
             </div>
         </section>
@@ -1026,7 +1126,7 @@
                 <div class="cta">
                     <h2>Support Our Drop-in Center</h2>
                     <p>Your donation helps us provide daily meals, medical care, and hope to children living on the streets</p>
-                    <a href="#" class="btn">Donate Now</a>
+                    <a href="#donate" onclick="scrollToSection('donate'); return false;" class="btn">Donate Now</a>
                 </div>
             </div>
         </div>
@@ -1112,7 +1212,7 @@
                 <div class="cta">
                     <h2>Support Our Drop-in Center</h2>
                     <p>Your donation helps us provide daily meals, medical care, and hope to children living on the streets</p>
-                    <a href="#" class="btn">Donate Now</a>
+                    <a href="#donate" onclick="scrollToSection('donate'); return false;" class="btn">Donate Now</a>
                 </div>
             </div>
         </div>
@@ -1543,6 +1643,6 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="script (1).js"></script>
 </body>
 </html>

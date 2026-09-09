@@ -254,35 +254,52 @@
             const buttonText = submitBtn.querySelector('.button-text');
             const spinner = submitBtn.querySelector('.loading-spinner');
 
+            // Validate form
+            if (!form.checkValidity()) {
+                form.reportValidity();
+                return;
+            }
+
             // Show loading state
             submitBtn.disabled = true;
             buttonText.style.display = 'none';
             spinner.style.display = 'inline-block';
 
-            // Simulate form processing
-            setTimeout(() => {
-                const formData = {
-                    name: document.getElementById('donorName').value,
-                    email: document.getElementById('donorEmail').value,
-                    amount: document.getElementById('donationAmount').value,
-                    type: document.querySelector('input[name="donationType"]:checked').value,
-                    purpose: document.getElementById('donationPurpose').value
-                };
+            const formData = {
+                name: document.getElementById('donorName').value,
+                email: document.getElementById('donorEmail').value,
+                amount: document.getElementById('donationAmount').value,
+                type: document.querySelector('input[name="donationType"]:checked').value,
+                purpose: document.getElementById('donationPurpose').value
+            };
 
-                // Log form data (in real implementation, send to server)
-                console.log('Donation submitted:', formData);
-
-                // Show success message
+            fetch('/api/donations', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData)
+            })
+            .then(res => {
+                if (!res.ok) throw new Error('Server error');
+                return res.json();
+            })
+            .then(data => {
+                if (data.url) {
+                    // Redirect to the configured payment gateway (Stripe Checkout)
+                    window.location.href = data.url;
+                    return;
+                }
                 showSuccessMessage('Thank you for your generous donation! We will send a receipt to your email.');
-
-                // Reset form
                 form.reset();
-
-                // Reset button state
+            })
+            .catch(err => {
+                showErrorMessage('Unable to submit donation right now. Please try again.');
+                console.error(err);
+            })
+            .finally(() => {
                 submitBtn.disabled = false;
                 buttonText.style.display = 'inline';
                 spinner.style.display = 'none';
-            }, 2000);
+            });
         }
 
         // ========== FORM HANDLING - CONTACT FORM ==========
@@ -296,7 +313,7 @@
 
             // Validate form
             if (!form.checkValidity()) {
-                showErrorMessage('Please fill in all required fields correctly.');
+                form.reportValidity();
                 return;
             }
 
@@ -305,30 +322,36 @@
             buttonText.style.display = 'none';
             spinner.style.display = 'inline-block';
 
-            // Simulate form processing
-            setTimeout(() => {
-                const formData = {
-                    name: document.getElementById('contactName').value,
-                    email: document.getElementById('contactEmail').value,
-                    phone: document.getElementById('contactPhone').value,
-                    subject: document.getElementById('contactSubject').value,
-                    message: document.getElementById('contactMessage').value
-                };
+            const formData = {
+                name: document.getElementById('contactName').value,
+                email: document.getElementById('contactEmail').value,
+                phone: document.getElementById('contactPhone').value,
+                subject: document.getElementById('contactSubject').value,
+                message: document.getElementById('contactMessage').value
+            };
 
-                // Log form data (in real implementation, send to server)
-                console.log('Contact form submitted:', formData);
-
-                // Show success message
+            fetch('/api/contacts', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData)
+            })
+            .then(res => {
+                if (!res.ok) throw new Error('Server error');
+                return res.json();
+            })
+            .then(() => {
                 showSuccessMessage('Thank you for reaching out! We will get back to you within 24 hours.');
-
-                // Reset form
                 form.reset();
-
-                // Reset button state
+            })
+            .catch(err => {
+                showErrorMessage('Unable to send your message right now. Please try again.');
+                console.error(err);
+            })
+            .finally(() => {
                 submitBtn.disabled = false;
                 buttonText.style.display = 'inline';
                 spinner.style.display = 'none';
-            }, 2000);
+            });
         }
 
         // ========== FORM HANDLING - VOLUNTEER FORM ==========
@@ -342,7 +365,7 @@
 
             // Validate form
             if (!form.checkValidity()) {
-                showErrorMessage('Please fill in all required fields correctly.');
+                form.reportValidity();
                 return;
             }
 
@@ -358,33 +381,146 @@
             buttonText.style.display = 'none';
             spinner.style.display = 'inline-block';
 
-            // Simulate form processing
-            setTimeout(() => {
-                const formData = {
-                    name: document.getElementById('volunteerName').value,
-                    email: document.getElementById('volunteerEmail').value,
-                    phone: document.getElementById('volunteerPhone').value,
-                    profession: document.getElementById('volunteerProfession').value,
-                    interest: document.getElementById('volunteerInterest').value,
-                    availability: document.getElementById('volunteerAvailability').value,
-                    experience: document.getElementById('volunteerExperience').value,
-                    message: document.getElementById('volunteerMessage').value
-                };
+            const formData = {
+                name: document.getElementById('volunteerName').value,
+                email: document.getElementById('volunteerEmail').value,
+                phone: document.getElementById('volunteerPhone').value,
+                profession: document.getElementById('volunteerProfession').value,
+                interest: document.getElementById('volunteerInterest').value,
+                availability: document.getElementById('volunteerAvailability').value,
+                experience: document.getElementById('volunteerExperience').value,
+                message: document.getElementById('volunteerMessage').value
+            };
 
-                // Log form data (in real implementation, send to server)
-                console.log('Volunteer application submitted:', formData);
-
-                // Show success message
+            fetch('/api/volunteers', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData)
+            })
+            .then(res => {
+                if (!res.ok) throw new Error('Server error');
+                return res.json();
+            })
+            .then(() => {
                 showSuccessMessage('Thank you for your volunteer application! We will review your submission and contact you within 2-3 business days.');
-
-                // Reset form
                 form.reset();
-
-                // Reset button state
+            })
+            .catch(err => {
+                showErrorMessage('Unable to submit your application right now. Please try again.');
+                console.error(err);
+            })
+            .finally(() => {
                 submitBtn.disabled = false;
                 buttonText.style.display = 'inline';
                 spinner.style.display = 'none';
-            }, 2000);
+            });
+        }
+
+        // ========== FORM HANDLING - CAREER APPLICATION FORM ==========
+        function processCareerForm(event) {
+            event.preventDefault();
+
+            const form = event.target;
+            const submitBtn = form.querySelector('.btn-submit');
+            const buttonText = submitBtn.querySelector('.button-text');
+            const spinner = submitBtn.querySelector('.loading-spinner');
+
+            // Validate form
+            if (!form.checkValidity()) {
+                form.reportValidity();
+                return;
+            }
+
+            // Show loading state
+            submitBtn.disabled = true;
+            buttonText.style.display = 'none';
+            spinner.style.display = 'inline-block';
+
+            const formData = {
+                name: document.getElementById('careerName').value,
+                email: document.getElementById('careerEmail').value,
+                phone: document.getElementById('careerPhone').value,
+                role: document.getElementById('careerRole').value,
+                experience: document.getElementById('careerExperience').value,
+                summary: document.getElementById('careerSummary').value
+            };
+
+            fetch('/api/careers', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData)
+            })
+            .then(res => {
+                if (!res.ok) throw new Error('Server error');
+                return res.json();
+            })
+            .then(() => {
+                showSuccessMessage('Thank you for your career application! We will review your details and contact you if a suitable role is available.');
+                form.reset();
+            })
+            .catch(err => {
+                showErrorMessage('Unable to submit your application right now. Please try again.');
+                console.error(err);
+            })
+            .finally(() => {
+                submitBtn.disabled = false;
+                buttonText.style.display = 'inline';
+                spinner.style.display = 'none';
+            });
+        }
+
+        // ========== FORM HANDLING - PROJECT PROPOSAL FORM ==========
+        function processProposalForm(event) {
+            event.preventDefault();
+
+            const form = event.target;
+            const submitBtn = form.querySelector('.btn-submit');
+            const buttonText = submitBtn.querySelector('.button-text');
+            const spinner = submitBtn.querySelector('.loading-spinner');
+
+            // Validate form
+            if (!form.checkValidity()) {
+                form.reportValidity();
+                return;
+            }
+
+            // Show loading state
+            submitBtn.disabled = true;
+            buttonText.style.display = 'none';
+            spinner.style.display = 'inline-block';
+
+            const formData = {
+                name: document.getElementById('proposalName').value,
+                email: document.getElementById('proposalEmail').value,
+                organization: document.getElementById('proposalOrganization').value,
+                title: document.getElementById('proposalTitle').value,
+                budget: document.getElementById('proposalBudget').value,
+                timeline: document.getElementById('proposalTimeline').value,
+                summary: document.getElementById('proposalSummary').value
+            };
+
+            fetch('/api/proposals', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData)
+            })
+            .then(res => {
+                if (!res.ok) throw new Error('Server error');
+                return res.json();
+            })
+            .then(() => {
+                showSuccessMessage('Thank you for submitting your project proposal! Our team will review it and get back to you.');
+                form.reset();
+            })
+            .catch(err => {
+                showErrorMessage('Unable to submit your proposal right now. Please try again.');
+                console.error(err);
+            })
+            .finally(() => {
+                submitBtn.disabled = false;
+                buttonText.style.display = 'inline';
+                spinner.style.display = 'none';
+            });
         }
 
         // ========== SUCCESS & ERROR MESSAGES ==========
